@@ -25,7 +25,7 @@ You can use the following code to import it using the alias discussed above.
 
     import seaborn as sns
 
-Then, using a library like pandas, is possible to load a *Dataframe* into **Seaborn**. For this example we will be using the *IRIS* dataset that we actually used in a previous deep dive ([Support Vector Machine And Python](https://blog.machcomputing.com/support-vector-machine-and-python/ "Support Vector Machine And Python")).
+Then, using a library like pandas, is possible to load a *Dataframe* into **Seaborn**. For this example we will be using the *IRIS* dataset that we actually used in a previous deep dive ([Support Vector Machine And Python](/blog/support-vector-machine-and-python "Support Vector Machine And Python")).
 
 ## Loading the dataset
 

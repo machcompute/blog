@@ -109,15 +109,7 @@ async function renderMarkdown(rawMarkdown: string): Promise<string> {
     .use(rehypeStringify)
     .process(rawMarkdown);
 
-  let html = String(result);
-
-  // Rewrite internal links from old Hugo domain to relative paths
-  html = html.replace(
-    /https?:\/\/blog\.machcomputing\.com\//g,
-    "/blog/"
-  );
-
-  return html;
+  return String(result);
 }
 
 export async function getPostBySlug(slug: string): Promise<Post> {

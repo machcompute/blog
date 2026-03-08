@@ -43,7 +43,7 @@ The dataset should be placed on the root of the project on a folder called datas
     plt.ylabel('sepal_width')
     plt.show()
 
-I encourage you to take a look at the relation of each attribute with each other as I did in my other post [Secure Your Future With Data Science](https://blog.machcomputing.com/secure-your-future-with-data-science/ "Secure Your Future With Data Science").
+I encourage you to take a look at the relation of each attribute with each other as I did in my other post [Secure Your Future With Data Science](/blog/secure-your-future-with-data-science "Secure Your Future With Data Science").
 
 ## svm model using sklearn
 

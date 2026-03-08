@@ -13,7 +13,7 @@ These search problems have some parameters, mainly the **start** node and the **
 
 In a previous post, we talked about an algorithm to solve this kind of problem.
 
-The approach there was to solve a problem using A\*, now we will be looking to Depth First as another way to solve problems. That post can be visited [here](https://blog.machcomputing.com/a-deep-dive-into-the-a-search-algorithm/ "A deep dive into the A* Search Algorithm").
+The approach there was to solve a problem using A\*, now we will be looking to Depth First as another way to solve problems. That post can be visited [here](/blog/a-deep-dive-into-the-a-search-algorithm "A deep dive into the A* Search Algorithm").
 
 ## Search space vs Search Tree
 

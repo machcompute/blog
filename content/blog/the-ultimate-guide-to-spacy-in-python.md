@@ -17,7 +17,7 @@ It was released in 2015 and quickly raised in popularity due to its simplicity a
 
 This library is written on top of Python directly and uses the famous library *Cython* to speed up computations.
 
-Let's now see some important point of *NLP*. If you are not comfortable with this concept, read my previous post where I talk a bit about it and what it is. You can find the link [here](https://blog.machcomputing.com/nlp-a-new-look-into-words/ "NLP – A new look into words").
+Let's now see some important point of *NLP*. If you are not comfortable with this concept, read my previous post where I talk a bit about it and what it is. You can find the link [here](/blog/nlp-a-new-look-into-words "NLP – A new look into words").
 
 ## Starting with Spacy
 

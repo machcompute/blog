@@ -22,7 +22,7 @@ blog/
     layout.tsx                    # Root layout with navbar, footer, fonts
     globals.css                   # Tailwind v4 @theme tokens + prose styles
     blog/
-      page.tsx                    # Paginated listing (?page=2&size=9)
+      page.tsx                    # Paginated listing with search (?page=2&size=9)
       [slug]/page.tsx             # Individual post with TOC
     tags/
       page.tsx                    # All tags (searchable)
@@ -36,6 +36,7 @@ blog/
     Navbar.tsx                    # Sticky nav with logo + links
     Footer.tsx                    # Dark footer with nav + connect columns
     BlogCard.tsx                  # Post card (date, reading time, tags)
+    BlogListing.tsx               # Search + pagination + card grid (client)
     Pagination.tsx                # Page numbers + page size selector
     TagPill.tsx                   # Lavender pill link
     Prose.tsx                     # Article HTML wrapper
@@ -97,8 +98,8 @@ images, tables, and links all work as expected.
 
 ## Key Details
 
-- **Pagination** — `/blog` accepts `?page=N&size=6|9|12` search params
+- **Search** — `/blog` has a client-side search bar filtering by title, description, tags, and categories
+- **Pagination** — `/blog` supports page size selection (6/9/12) with numbered page navigation
 - **TOC** — auto-generated from h2/h3 headings; sticky sidebar on desktop, inline card on mobile
 - **Static generation** — all post pages use `generateStaticParams` for build-time rendering
-- **Internal link rewriting** — old `blog.machcomputing.com` URLs are rewritten to `/blog/` paths
 - **Styling** — follows the Mach Computing style guide (see `assets/style.md`)
