@@ -9,6 +9,7 @@ const navLinks = [
 ];
 
 const connectLinks = [
+  { href: "https://orcid.org/0009-0005-6728-3089", label: "ORCID" },
   { href: "https://scholar.google.com/citations?user=BgSpSB0AAAAJ", label: "Google Scholar" },
   { href: "https://github.com/LukasAfonso", label: "GitHub" },
   { href: "https://www.linkedin.com/in/lu%C3%ADs-carlos-casanova-afonso-8415521b2", label: "LinkedIn" },
