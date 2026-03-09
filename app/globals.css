@@ -118,3 +118,15 @@ body {
 .geo-c { animation: float-up 5.5s ease-in-out 0.6s infinite; }
 .geo-d { animation: float-drift 8s ease-in-out 0.2s infinite; }
 .geo-e { animation: float-up 7s ease-in-out 0.5s infinite; }
+
+/* MDXEditor theme overrides */
+.admin-editor [class*="toolbar"] {
+  border-bottom: 1px solid rgba(138, 141, 145, 0.15);
+  background: #fafafa;
+}
+.admin-editor [class*="contentEditable"] {
+  font-family: var(--font-geist-sans);
+}
+.admin-editor [role="toolbar"] button[data-active="true"] {
+  background: rgba(184, 179, 233, 0.2);
+}
