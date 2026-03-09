@@ -23,12 +23,6 @@ export default function Navbar() {
               className="hidden sm:block h-auto"
             />
           </a>
-          <Link
-            href="/"
-            className="text-sm text-mc-gray/60 hover:text-mc-dark transition-colors hidden sm:block"
-          >
-            Home
-          </Link>
         </div>
         <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) =>
