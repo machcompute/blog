@@ -49,15 +49,15 @@ Whether you're a coding newbie or brushing up on your skills, by the end of this
 
 So let's dive in and unlock the secrets to writing faster, leaner, and more scalable code!
 
-## II. What is Big O Notation?
+## What is Big O Notation?
 
-### A. Definition and Basic Concept
+### Definition and Basic Concept
 
 At its core, Big O Notation is a mathematical way to describe the performance or complexity of an algorithm. More specifically, it describes the worst-case scenario—the maximum time an algorithm will take to complete, or the maximum space it will require, given an input of size n.
 
 In simpler terms, Big O Notation answers the question: "How does the runtime or space requirement of this algorithm grow as the input size grows?" It provides a way to talk about the general form of this growth (e.g., linearly, quadratically, exponentially).
 
-### B. The Language of Algorithm Efficiency
+### The Language of Algorithm Efficiency
 
 As programmers, we often find ourselves needing to discuss and compare the performance of different algorithms. Without a shared language or set of standards, these conversations would be much more difficult. This is where Big O comes in.
 
@@ -65,7 +65,7 @@ Big O serves as a common vocabulary among programmers. When someone says an algo
 
 Importantly, Big O Notation focuses on how an algorithm's performance changes as the input size changes, rather than on the exact runtime. This makes it a valuable tool for discussing algorithm efficiency in a general, conceptual way without getting bogged down in the details of specific implementations or hardware.
 
-### C. Asymptotic Analysis: The Heart of Big O
+### Asymptotic Analysis: The Heart of Big O
 
 At the heart of Big O Notation is the concept of asymptotic analysis. Asymptotic analysis is a method of describing the behavior of an algorithm as the input size approaches infinity.
 
@@ -73,7 +73,7 @@ In practical terms, this means that when we use Big O Notation, we focus on the 
 
 For instance, consider two algorithms: one that takes 5n + 2 steps, and another that takes 3n + 10 steps (where n is the size of the input). As n gets very large, the "+2" and "+10" parts of these expressions become less and less significant. Both of these algorithms are said to be "O(n)" because the dominant term is the one with n.
 
-### D. Worst-Case, Best-Case, and Average-Case Scenarios
+### Worst-Case, Best-Case, and Average-Case Scenarios
 
 When analyzing algorithms, we usually focus on the worst-case scenario. This is what Big O Notation describes. The worst case is the scenario where the algorithm takes the longest time (or the most space) to complete.
 
@@ -81,11 +81,11 @@ However, there are other ways to analyze an algorithm's performance. Omega notat
 
 While best-case and average-case analysis can be useful in some situations, worst-case analysis (i.e., Big O) is most often used because it gives an upper bound on the time an algorithm will take. Knowing the worst-case scenario can help programmers plan for the most resource-intensive situation their program might face.
 
-## III. Common Big O Notations
+## Common Big O Notations
 
 Now that we understand what Big O Notation is and why it's important, let's dive into some of the most common time complexities you'll encounter.
 
-### A. O(1) - Constant Time
+### O(1) - Constant Time
 
 O(1), or constant time, is the holy grail of algorithm efficiency. An algorithm is said to have a time complexity of O(1) if its performance remains constant, regardless of the size of the input.
 
@@ -108,7 +108,7 @@ Common use cases for O(1) algorithms:
 - Hash table insertions and lookups
 - Stack push and pop operations
 
-### B. O(log n) - Logarithmic Time
+### O(log n) - Logarithmic Time
 
 An algorithm is said to have a logarithmic time complexity, O(log n), if its running time increases by a constant factor for each doubling of the input size.
 
@@ -142,7 +142,7 @@ Common use cases for O(log n) algorithms:
 - Binary search trees
 - Certain divide-and-conquer algorithms
 
-### C. O(n) - Linear Time
+### O(n) - Linear Time
 
 An algorithm has a linear time complexity, O(n), if its running time increases linearly with the size of the input.
 
@@ -167,7 +167,7 @@ Common use cases for O(n) algorithms:
 - Linear search
 - Traversing arrays or linked lists
 
-### D. O(n log n) - Linearithmic Time
+### O(n log n) - Linearithmic Time
 
 An algorithm is said to have a time complexity of O(n log n), or linearithmic time, if its running time is a combination of linear and logarithmic factors.
 
@@ -216,7 +216,7 @@ Common use cases for O(n log n) algorithms:
 - Efficient sorting algorithms (merge sort, heap sort, quicksort)
 - Certain divide-and-conquer algorithms
 
-### E. O(n^2) - Quadratic Time
+### O(n^2) - Quadratic Time
 
 An algorithm has a quadratic time complexity, O(n^2), if its running time is proportional to the square of the input size.
 
@@ -243,7 +243,7 @@ Common use cases for O(n^2) algorithms:
 - Simple sorting algorithms (bubble sort, insertion sort)
 - Nested loops for pairwise comparison
 
-### F. O(2^n) - Exponential Time
+### O(2^n) - Exponential Time
 
 An algorithm has an exponential time complexity, O(2^n), if its running time doubles for each additional element in the input.
 
@@ -267,7 +267,7 @@ Common use cases for O(2^n) algorithms:
 - Solving the traveling salesman problem with a brute-force approach
 - Generating all subsets of a set
 
-### G. Comparison of Time Complexities
+### Comparison of Time Complexities
 
 | Time Complexity | Growth Rate | Description |
 |-----------------|-------------|-------------|
@@ -282,7 +282,7 @@ As the table illustrates, the choice of algorithm can have a dramatic impact on 
 
 However, it's important to note that time complexity isn't the only factor to consider when choosing an algorithm. Space complexity (the amount of memory an algorithm uses), as well as factors like code simplicity and readability, can also play a role in the decision.
 
-### H. Practical Implications
+### Practical Implications
 
 Understanding time complexity is crucial for writing efficient and scalable code. When choosing an algorithm for a particular problem, it's important to consider the expected input size and the performance requirements of your application.
 
