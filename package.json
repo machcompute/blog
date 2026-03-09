@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@mdxeditor/editor": "^3.52.4",
     "gray-matter": "^4.0.3",
     "next": "16.1.6",
     "react": "19.2.3",
@@ -19,6 +20,7 @@
     "rehype-stringify": "^10.0.1",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.2",
+    "server-only": "^0.0.1",
     "shiki": "^4.0.1",
     "unified": "^11.0.5"
   },

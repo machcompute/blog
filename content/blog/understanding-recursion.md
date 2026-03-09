@@ -10,15 +10,15 @@ title: 'Understanding Recursion: A Comprehensive Guide for Programmers'
 
 Recursion is a fundamental concept in programming that often challenges both novice and experienced developers. At its core, recursion occurs when a function calls itself to solve smaller instances of the same problem. This comprehensive guide demystifies recursion, taking you on a journey from basic principles to advanced techniques. We'll explore essential concepts like base cases and recursive cases, dive into classic examples such as factorial calculations and the Fibonacci sequence, and uncover optimization strategies like tail recursion and memoization. By the end of this post, you'll have a solid grasp of when and how to use recursion effectively, enabling you to write more elegant, efficient, and powerful code for a wide range of programming challenges.
 
-## I. Introduction
+## Introduction
 
-### A. Definition of recursion
+### Definition of recursion
 
 Recursion can be stated as follows: when a process or concept requires itself to be defined.
 
 But, what does it mean? It means that the process repeats itself to create a result. A famous example is the Fibonacci sequence where the function, F, is defined by the sum of the 2 previous results, with the exception of F0 that is 0 and F1 that is 1.
 
-### B. Importance in programming
+### Importance in programming
 
 In programming there are 2 main ways of decomposing a problem, Bottom-up and Top-down.
 
@@ -32,9 +32,9 @@ In the opposite side, we have the top-down approach that takes the problem and d
 
 Recursivity is quite useful for stuff like debugging where someone starts looking at the broad function and converges into where the code is wrong until we pinpoint a location.
 
-## II. Understanding the Basics
+## Understanding the Basics
 
-### A. Base case and recursive case
+### Base case and recursive case
 
 In recursive world there are 2 major concepts that make or break a recursive solution and can be quite hard to debug if one is flaky / wrong.
 
@@ -46,11 +46,11 @@ The other case we have is the recursive case where we divide the problem and mak
 
 Having said this, the 2 main takeaways are recursive case divides the problem recursively and defines our logic and the base case defines when to stop recursion.
 
-## III. Simple Recursive Examples
+## Simple Recursive Examples
 
 We will be now talking about 2 famous examples of recursion that are quite useful.
 
-#### A. Factorial calculation
+#### Factorial calculation
 
 One of the examples I wanted to talk is the factorial one. A simple yet effective way to calculate the factorial of a number.
 
@@ -62,17 +62,17 @@ The base case is simple, it just needs to check the condition to stop, in this c
 
 This way we have an effective way to calculate the factorial of a number.
 
-#### B. Fibonacci sequence
+#### Fibonacci sequence
 
 Another example I want to analyze is the Fibonacci sequence, how can we calculate the nth element of such sequence in a recursive manner? Well, lucky for us it is simple!
 
 To define the base case, as we talked before, we need to check if n, our number is one of the numbers that we know the value, either 0 or 1 if that is the case we return the value else we add the previous 2 numbers.
 
-## IV. Advanced Recursive Techniques
+## Advanced Recursive Techniques
 
 Now we will talk about some optimizations that can be done to recursive algorithms to make them more efficient.
 
-#### A. Tail recursion
+#### Tail recursion
 
 Tail recursion is a technique used in some languages to optimize the recursive function by transforming it, effectively into an iterative function.
 
@@ -82,7 +82,7 @@ This works, because, internally, computers have a stack of function calls and wh
 
 This can be very useful when we have deeply recursive functions where, when using a stack based approach we would be quickly out of resources, but with tail recursion, the stack does not grow and we can compute such functions.
 
-#### B. Memoization and dynamic programming
+#### Memoization and dynamic programming
 
 Memoization is when we cache the results as soon as we compute them, making it a fast solution for computing solutions where a top-down approach is required.
 
@@ -90,38 +90,38 @@ Dynamic Programming or DP for short, in the other hand is when we use a data str
 
 DP divides the problem into smaller ones, following a bottom-up approach.
 
-## V. Common Pitfalls and How to Avoid Them
+## Common Pitfalls and How to Avoid Them
 
 We will now talk over common errors and pitfalls that we, programmers, usually fall into.
 
-## A. Stack overflow errors
+### Stack overflow errors
 
 This error occurs when we make more recursive calls than the stack allows. Remember talking about tail recursion? Well, this is the error in case the stack becomes full of recursive calls and the program crashes.
 
 To address this issue we either have to fine tune our base case or implement tail recursion to avoid running out of space in the stack.
 
-## B. Unnecessary recursive calls
+### Unnecessary recursive calls
 
 Other issue is when we are coding we can easily make an error and make the recursive call several times with the same parameters, slowing down massively the code.
 
 This is not an error but more a common pitfall that can catch many of us off guard and be really difficult to troubleshoot.
 
-## VI. Real-world Applications
+## Real-world Applications
 
 Finally we will be talking about where this recursive functions are used in the real world.
 
-### A. Tree traversal algorithms
+### Tree traversal algorithms
 
 Traversing trees is normally done recursively due to the nature of the structure.
 
 In a binary tree, every node has other nodes and every other node has even more nodes, so, by visiting every node at a time, it becomes easy to call the traverse function for every children, stopping when we reach a leaf node.
 
-### B. Divide-and-conquer algorithms
+### Divide-and-conquer algorithms
 
 Divide and conquer algorithms are really interesting, they work by recursively dividing the problem until it becomes manageable.
 
 Example of algorithms are for instance, the merge sort algorithm, where it divides and then merges smaller chunks.
 
-## VII. Conclusion
+## Conclusion
 
 And this concludes our small introduction to recursive functions and for now that's all I have for you, have a nice day and keep on coding!

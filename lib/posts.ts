@@ -11,6 +11,7 @@ import rehypePrettyCode from "rehype-pretty-code";
 
 const POSTS_DIR = path.join(process.cwd(), "content", "blog");
 const POSTS_PER_PAGE = 5;
+const IS_DEV = process.env.NODE_ENV === "development";
 
 export interface PostMeta {
   slug: string;
@@ -63,7 +64,7 @@ function parsePost(filename: string): PostMeta | null {
   const raw = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(raw);
 
-  if (data.draft) return null;
+  if (data.draft && !IS_DEV) return null;
 
   return {
     slug: slugFromFilename(filename),
@@ -124,7 +125,7 @@ export async function getPostBySlug(slug: string): Promise<Post> {
   const raw = fs.readFileSync(filePath, "utf-8");
   const { data, content: rawContent } = matter(raw);
 
-  if (data.draft) {
+  if (data.draft && !IS_DEV) {
     throw new Error(`Post not found: ${slug}`);
   }
 
