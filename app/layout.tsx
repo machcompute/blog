@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Mach Computing Blog",
-    template: "%s | Mach Computing",
+    default: "MC Blog",
+    template: "%s | MC Blog",
   },
   description:
     "Articles on AI/ML, algorithms, data structures, and programming.",
